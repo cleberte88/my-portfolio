@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    outline: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #121214;
+}
+
+.page-container{
+    position: relative;
+    width: 100%;
+    max-width: 1180px;
+    margin: 200px auto 60px;
+    padding: 0px 30px;
+    display: flex;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.left-page{
+    width: 31.425%;
+    margin-top: -104px;
+}
+
+.left-page-profile{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding: 32px;
+    background: rgb(32, 32, 36);
+    border-radius: 5px;
+}
+
+.right-page{
+    width: 63%;
+}
+
+.right-page-about-me{
+    position: relative;
+    width: 100%;
+    padding: 32px;
+    background: rgb(32, 32, 36);
+    border-radius: 5px;
+}
+
+.right-page-about-me h2{
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px 0px 1.333em;
+    color: white;
+}
+
+.info-about-me{
+    padding: 0px;
+}
+
+.info-about-me p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(225, 225, 230);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.important-links{
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, max-content);
+    margin-top: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.my-github{
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(41, 41, 46);
+    padding: 14px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    transition: background 0.3s ease 0s;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        transition-property: background;
+    white-space: nowrap;
+}
+
+.my-linkedin{
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(41, 41, 46);
+    padding: 14px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    transition: background 0.3s ease 0s;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        transition-property: background;
+    white-space: nowrap;
+}
