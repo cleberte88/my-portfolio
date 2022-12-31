@@ -1,15 +1,15 @@
-*{
+* {
     box-sizing: border-box;
     outline: 0px;
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     background: #121214;
 }
 
-.page-container{
+.page-container {
     position: relative;
     width: 100%;
     max-width: 1180px;
@@ -22,12 +22,12 @@ body{
     z-index: 2;
 }
 
-.left-page{
+.left-page {
     width: 31.425%;
     margin-top: -104px;
 }
 
-.left-page-profile{
+.left-page-profile {
     text-align: center;
     position: relative;
     width: 100%;
@@ -36,14 +36,14 @@ body{
     border-radius: 5px;
 }
 
-.left-page-profile img{
+.left-page-profile img {
     width: 120px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 50%;
     margin-bottom: 50px;
 }
 
-.left-page-profile h1{
+.left-page-profile h1 {
     position: relative;
     font-size: 24px;
     font-weight: bold;
@@ -51,14 +51,14 @@ body{
     color: rgb(225, 225, 230);
 }
 
-.profile-infos{
+.profile-infos {
     font-size: 16px;
     line-height: 1.5;
     color: rgb(230, 230, 230);
     margin: 1.5em 0px;
 }
 
-.profile-infos span{
+.profile-infos span {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -67,27 +67,31 @@ body{
     margin: 0.5em;
 }
 
-.tools-used{
+.tools-used {
     margin-top: 25px;
 }
 
-.tools-used img{
+.tools-used img {
     width: 32px;
     height: 32px;
     margin-right: 8px;
     border-radius: 5px;
     transition: all 0.2s ease 0s;
-        transition-duration: 0.2s;
-        transition-timing-function: ease;
-        transition-delay: 0s;
-        transition-property: all;
 }
 
-.tools-used img:last-child{
+.tools-used img:hover {
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+.tools-used img:last-child {
     margin-right: 0px;
 }
 
-.teste{
+.teste {
     position: relative;
     margin-top: 32px;
     padding-top: 22px;
@@ -98,11 +102,11 @@ body{
     color: rgb(135, 134, 139);
 }
 
-.right-page{
+.right-page {
     width: 63%;
 }
 
-.right-page-about-me{
+.right-page-about-me {
     position: relative;
     width: 100%;
     padding: 32px;
@@ -110,7 +114,7 @@ body{
     border-radius: 5px;
 }
 
-.right-page-about-me h2{
+.right-page-about-me h2 {
     position: relative;
     font-size: 24px;
     font-weight: bold;
@@ -118,11 +122,11 @@ body{
     color: white;
 }
 
-.info-about-me{
+.info-about-me {
     padding: 0px;
 }
 
-.info-about-me p{
+.info-about-me p {
     overflow: hidden;
     text-overflow: ellipsis;
     color: rgb(225, 225, 230);
@@ -130,18 +134,18 @@ body{
     line-height: 24px;
 }
 
-.important-links{
+.important-links {
     display: grid;
     gap: 8px;
     grid-template-columns: repeat(2, max-content);
     margin-top: 40px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.my-github{
+.my-github {
     display: inline-flex;
     -webkit-box-align: center;
     align-items: center;
@@ -151,14 +155,14 @@ a{
     font-size: 14px;
     color: rgb(255, 255, 255);
     transition: background 0.3s ease 0s;
-        transition-duration: 0.3s;
-        transition-timing-function: ease;
-        transition-delay: 0s;
-        transition-property: background;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: background;
     white-space: nowrap;
 }
 
-.my-linkedin{
+.my-linkedin {
     display: inline-flex;
     -webkit-box-align: center;
     align-items: center;
@@ -168,9 +172,58 @@ a{
     font-size: 14px;
     color: rgb(255, 255, 255);
     transition: background 0.3s ease 0s;
-        transition-duration: 0.3s;
-        transition-timing-function: ease;
-        transition-delay: 0s;
-        transition-property: background;
     white-space: nowrap;
+}
+
+
+.tools-and-apprenticeship {
+    margin-top: 24px;
+    position: relative;
+    width: 100%;
+    padding: 32px;
+    background: rgb(32, 32, 36);
+    border-radius: 5px;
+}
+
+.tools-and-apprenticeship h2 {
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px 0x 1.333em;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+}
+
+.tecnology-experience-and-study {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 8px;
+}
+
+.tecnology-experience-and-study .tec2 {
+    margin-left: 30px;
+}
+
+.tecnology-experience-and-study span {
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.tecnology-experience-and-study ul {
+    display: flex;
+    margin-top: 20px;
+    list-style: none;
+}
+
+.tecnology-experience-and-study ul li {
+    margin-right: 10px;
+}
+
+.tecnology-experience-and-study ul li:hover {
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+    transform: translateY(-8px);
 }
